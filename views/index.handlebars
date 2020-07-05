@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+
+            {{#each BurgerData}}
+                {{#unless devoured}}
+                <h4> {{burger_name}} </h4>
+                <button>Devoured</button>
+                {{/unless}}
+            {{/each}}
+        </div>
+        <div class="col-sm-4">
+            <h3>ArtBurger</h3>
+          <input type="text" id="burgerName" >
+          <button id="addburger">add burger</button>
+        </div>
+        <div class="col-sm-4">
+{{#each BurgerData }}
+{{#if devoured}}
+<h4>{{burger_name}}</h4>
+{{/if}}
+{{/each}}
+
+        </div>
+    </div>
+</div>
